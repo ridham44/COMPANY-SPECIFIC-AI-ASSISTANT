@@ -99,7 +99,12 @@ this hardware (no GPU). This matches the stack already specified.
 | Vector DB | Qdrant | `VECTOR_DB=qdrant` |
 | Inference runtime | Ollama | `LLM_RUNTIME=ollama` |
 | Chunk size / overlap (starting point, tune in Phase 9) | 500 tokens / 75 overlap | `CHUNK_SIZE=500`, `CHUNK_OVERLAP=75` |
-| Relevance threshold (starting point, tune in Phase 9) | cosine 0.35 | `RELEVANCE_THRESHOLD=0.35` |
+| Relevance threshold (starting point, tune in Phase 9) | cosine 0.5 | `RELEVANCE_THRESHOLD=0.5` |
+
+Revised from the original 0.35 guess after actually measuring bge-small-en-v1.5
+on real data in Phase 4/5: unrelated query/passage pairs scored ~0.30-0.35,
+related ones ~0.70-0.77. 0.5 sits cleanly in the gap between them; still
+worth re-tuning once more real company documents are indexed (Phase 9).
 
 ### Hardware headroom check (16GB RAM, CPU-only)
 

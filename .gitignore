@@ -10,3 +10,10 @@ dist/
 build/
 eval/reports/*.json
 !eval/reports/.gitkeep
+
+backend/storage/
+backend/qdrant_data/
+.env.local
+next-env.d.ts
+
+.claude/

@@ -1,27 +1,37 @@
 from fastapi import APIRouter, Request
-from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
-from app.services.llm_client import LLMClient
+from app.models.conversation import Conversation, Message
+from app.rag.schemas import ChatResult
 
-router = APIRouter()
+router = APIRouter(tags=["chat"])
 
 
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=4000)
+    company_id: str
+    session_id: str
 
 
-def get_llm_client(request: Request) -> LLMClient:
-    return request.app.state.llm_client
+@router.post("/chat", response_model=ChatResult)
+async def chat(payload: ChatRequest, request: Request) -> ChatResult:
+    conversation = await Conversation.find_one(
+        Conversation.company_id == payload.company_id, Conversation.session_id == payload.session_id
+    )
+    if conversation is None:
+        conversation = Conversation(company_id=payload.company_id, session_id=payload.session_id)
+        await conversation.insert()
 
+    await Message(conversation_id=str(conversation.id), role="user", content=payload.message).insert()
 
-@router.post("/chat")
-async def chat(payload: ChatRequest, request: Request) -> StreamingResponse:
-    llm_client = get_llm_client(request)
-    messages = [{"role": "user", "content": payload.message}]
+    result = await request.app.state.rag_pipeline.answer(payload.company_id, payload.message)
 
-    async def token_stream():
-        async for chunk in llm_client.stream_chat(messages):
-            yield chunk
+    await Message(
+        conversation_id=str(conversation.id),
+        role="assistant",
+        content=result.answer,
+        sources=result.sources,
+        grounded=result.grounded,
+    ).insert()
 
-    return StreamingResponse(token_stream(), media_type="text/plain")
+    return result
