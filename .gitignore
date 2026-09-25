@@ -2,7 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-.env
 *.egg-info/
 node_modules/
 .next/
@@ -13,7 +12,7 @@ eval/reports/*.json
 
 backend/storage/
 backend/qdrant_data/
-.env.local
 next-env.d.ts
 
 .claude/
+config.bat
