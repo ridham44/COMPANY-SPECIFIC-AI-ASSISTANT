@@ -1,0 +1,20 @@
+{"id": "q01", "question": "How many paid leave days do full-time employees get per year?", "expected_passage_id": "p01"}
+{"id": "q02", "question": "How many unused leave days can I carry over to next year?", "expected_passage_id": "p02"}
+{"id": "q03", "question": "How do I get reimbursed for travel expenses?", "expected_passage_id": "p03"}
+{"id": "q04", "question": "Is manager approval needed for large expense reimbursements?", "expected_passage_id": "p04"}
+{"id": "q05", "question": "What does the Aster Cloud Suite cost per user?", "expected_passage_id": "p05"}
+{"id": "q06", "question": "What's included in the Enterprise tier of Aster Cloud Suite?", "expected_passage_id": "p06"}
+{"id": "q07", "question": "What does the new employee onboarding program cover?", "expected_passage_id": "p07"}
+{"id": "q08", "question": "How often do I need to redo security training?", "expected_passage_id": "p08"}
+{"id": "q09", "question": "What is the response time for a critical P1 support ticket?", "expected_passage_id": "p09"}
+{"id": "q10", "question": "How are P1 incidents escalated to on-call engineers?", "expected_passage_id": "p10"}
+{"id": "q11", "question": "How long are customer support chat logs kept?", "expected_passage_id": "p11"}
+{"id": "q12", "question": "Do remote employees get a stipend for home office equipment?", "expected_passage_id": "p12"}
+{"id": "q13", "question": "What are the core working hours at the company?", "expected_passage_id": "p13"}
+{"id": "q14", "question": "When do performance reviews happen during the year?", "expected_passage_id": "p14"}
+{"id": "q15", "question": "How much is the employee referral bonus?", "expected_passage_id": "p15"}
+{"id": "q16", "question": "How many weeks of paid parental leave does the primary caregiver get?", "expected_passage_id": "p16"}
+{"id": "q17", "question": "Do company laptops need disk encryption?", "expected_passage_id": "p17"}
+{"id": "q18", "question": "How many vendor quotes are required for a large purchase?", "expected_passage_id": "p18"}
+{"id": "q19", "question": "Which AWS region is customer data hosted in?", "expected_passage_id": "p19"}
+{"id": "q20", "question": "How many public holidays does the company observe each year?", "expected_passage_id": "p20"}

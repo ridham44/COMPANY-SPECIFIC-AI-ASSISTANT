@@ -1,0 +1,20 @@
+{"id": "p01", "text": "Our standard annual leave policy grants full-time employees 24 paid leave days per calendar year, accrued monthly at 2 days per month."}
+{"id": "p02", "text": "Employees can carry forward a maximum of 5 unused leave days into the next calendar year; any excess is forfeited on December 31st."}
+{"id": "p03", "text": "The reimbursement process for travel expenses requires submitting receipts within 15 days of the trip via the internal Expenses portal."}
+{"id": "p04", "text": "All reimbursements above INR 10,000 require manager approval before finance processes the payment, typically within 7 business days."}
+{"id": "p05", "text": "Our flagship product, the Aster Cloud Suite, is priced at INR 4,999 per user per month for the Standard tier and INR 8,999 for the Enterprise tier."}
+{"id": "p06", "text": "The Enterprise tier of Aster Cloud Suite includes single sign-on, priority support with a 4-hour SLA, and dedicated onboarding."}
+{"id": "p07", "text": "New employees complete a mandatory 3-day onboarding program covering company policies, security training, and tool setup."}
+{"id": "p08", "text": "Security training must be renewed annually and includes modules on phishing awareness, data handling, and password hygiene."}
+{"id": "p09", "text": "Client support tickets are triaged into P1 (critical, 1-hour response), P2 (high, 4-hour response), and P3 (normal, 1-business-day response)."}
+{"id": "p10", "text": "P1 tickets automatically page the on-call engineer via the incident management system regardless of time of day."}
+{"id": "p11", "text": "Our data retention policy stores customer support conversation logs for 24 months before automatic deletion, unless legally required to retain longer."}
+{"id": "p12", "text": "Employees working remotely are eligible for a one-time home office stipend of INR 15,000, reimbursed through the standard expense process."}
+{"id": "p13", "text": "The company's core working hours are 10 AM to 4 PM IST, with flexible start and end times outside that window."}
+{"id": "p14", "text": "Performance reviews are conducted twice a year, in April and October, and are tied to the annual compensation review cycle."}
+{"id": "p15", "text": "The referral bonus program pays INR 25,000 to the referring employee after the new hire completes 3 months of employment."}
+{"id": "p16", "text": "Our parental leave policy provides 26 weeks of paid leave for the primary caregiver and 2 weeks for the secondary caregiver."}
+{"id": "p17", "text": "All company laptops are enrolled in mobile device management (MDM) and must have disk encryption enabled before first use."}
+{"id": "p18", "text": "The procurement policy requires three vendor quotes for any purchase above INR 1,00,000 before approval by the finance head."}
+{"id": "p19", "text": "Customer data is hosted in AWS ap-south-1 (Mumbai) region exclusively, in line with our data residency commitments to clients."}
+{"id": "p20", "text": "The company observes 12 public holidays per year, published annually on the internal HR portal by January 1st."}

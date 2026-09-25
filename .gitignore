@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.egg-info/
+node_modules/
+.next/
+dist/
+build/
+eval/reports/*.json
+!eval/reports/.gitkeep
