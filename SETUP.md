@@ -1,4 +1,4 @@
-# Setup on the main PC
+chec# Setup on the main PC
 
 Steps to get the whole thing running on the actual machine. Do this after
 pulling the repo there.
